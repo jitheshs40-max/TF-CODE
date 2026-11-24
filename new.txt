@@ -1,0 +1,21 @@
+az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/33ffa515-ec31-461e-b57f-2ab6f5ce71ab"
+
+export MSYS_NO_PATHCONV=1
+
+{
+  "appId": "f283698e-4553-4b27-a09b-8492d4fb04af",
+  "displayName": "azure-cli-2026-11-17-06-40-48",
+  "password": "s9M8Q~8kHN88p3AYIFkXxbgYQz3xKVEv9aiH~bc1",
+  "tenant": "6e5a352d-f686-46cb-be83-d0795ca7a8a3"
+}
+
+az login --service-principal -u f283698e-4553-4b27-a09b-8492d4fb04af -p s9M8Q~8kHN88p3AYIFkXxbgYQz3xKVEv9aiH~bc1 --tenant 6e5a352d-f686-46cb-be83-d0795ca7a8a3
+
+
+# sh
+export ARM_CLIENT_ID="f283698e-4553-4b27-a09b-8492d4fb04af"
+export ARM_CLIENT_SECRET="s9M8Q~8kHN88p3AYIFkXxbgYQz3xKVEv9aiH~bc1"
+export ARM_TENANT_ID="6e5a352d-f686-46cb-be83-d0795ca7a8a3"
+export ARM_SUBSCRIPTION_ID="33ffa515-ec31-461e-b57f-2ab6f5ce71ab"
+
+
